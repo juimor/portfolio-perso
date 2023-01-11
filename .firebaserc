@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "default": "rafik-djouadi-portfolio",
+    "rafik-djouadi-portfolio": "rafik-djouadi-portfolio"
+  },
+  "targets": {
+    "rafik-djouadi-portfolio": {
+      "hosting": {
+        "rafik-djouadi-portfolio": [
+          "rafik-djouadi-portfolio"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

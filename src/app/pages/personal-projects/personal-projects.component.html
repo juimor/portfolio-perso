@@ -1,0 +1,36 @@
+<div class="container" fxLayout fxLayoutAlign="center stretch" [style]="Style">
+  <div fxLayout="column" fxFlex="10" fxLayoutAlign="space-between start">
+    <span class="styled-link">
+      <a routerLink="/" routerLinkActive="active">BACK</a>
+    </span>
+    <img src="../../../assets/st-loup-portfolio.jpg" loading="lazy" />
+  </div>
+
+  <div fxLayoutAlign="end" fxFlex="20">
+    <app-menu
+      (backgroundTitleEvent)="changeBackgroundTitle($event)"
+      [items]="projectsMenuItems"
+      [reverse]="true"
+      [hasHover]="true"
+      [gap]="56"
+    ></app-menu>
+  </div>
+
+  <div fxFlex fxLayout="column" fxLayoutAlign="start end">
+    <span class="styled-link">
+      <a href="javascript:void(0)" (click)="setFooterVisibility()"
+        >CONTACT</a
+      ></span
+    >
+    <span class="styled-link">
+      <a href="https://www.instagram.com/4mbianss/" target="_blank"
+        >INSTAGRAM</a
+      >
+    </span>
+  </div>
+</div>
+<app-footer
+  [ngClass]="{ appear: !isFooterHide, disappear: isFooterHide }"
+  class="footer"
+  (hideFooter)="hideFooter($event)"
+></app-footer>

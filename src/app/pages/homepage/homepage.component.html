@@ -1,0 +1,25 @@
+<div class="container" fxLayout="row">
+  <div class="homepage--container">
+    <div class="homepage--img">
+      <img
+        alt="gif by enzo saintloup"
+        src="../../../assets/344.gif"
+        loading="lazy"
+      />
+    </div>
+    <div class="homepage--title">
+      <span><a>344</a></span>
+    </div>
+
+    <div class="homepage--menu">
+      <!-- fxFlexOffset="15" a tester-->
+      <div class="menu-links" fxLayout="column" fxLayoutAlign="end">
+        <app-menu
+          class="homepage--app-menu"
+          [items]="homepageMenuItems"
+          [gap]="80"
+        ></app-menu>
+      </div>
+    </div>
+  </div>
+</div>

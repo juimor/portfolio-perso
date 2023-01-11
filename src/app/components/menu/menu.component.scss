@@ -1,0 +1,33 @@
+.container {
+  padding: 0 48px;
+  width: max-content;
+}
+
+.menu-links {
+  height: 10%;
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  a:hover {
+    color: red !important;
+  }
+  a:visited {
+    color: black;
+  }
+}
+
+.growOnHover {
+  a:hover {
+    font-size: 50px;
+  }
+}
+
+#delay {
+  transition-property: font-size;
+  transition-duration: 0.02s;
+}
+
+#delay:hover {
+  font-size: 50px;
+}
