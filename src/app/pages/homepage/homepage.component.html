@@ -1,25 +1,14 @@
-<div class="container" fxLayout="row">
-  <div class="homepage--container">
-    <div class="homepage--img">
-      <img
-        alt="gif by enzo saintloup"
-        src="../../../assets/344.gif"
-        loading="lazy"
-      />
-    </div>
-    <div class="homepage--title">
-      <span><a>344</a></span>
-    </div>
-
-    <div class="homepage--menu">
-      <!-- fxFlexOffset="15" a tester-->
-      <div class="menu-links" fxLayout="column" fxLayoutAlign="end">
-        <app-menu
-          class="homepage--app-menu"
-          [items]="homepageMenuItems"
-          [gap]="80"
-        ></app-menu>
+<div class="homepage--container">
+  <div class="homepage--content-container">
+    <span class="homepage--content-introduction">
+      Hello, I'm <strong class="strong-text">Rafik Djouadi</strong>.<br />
+      I'm a full-stack web developer.
+    </span>
+    <button class="homepage--button">
+      <div class="homepage--button-content">
+        <span>View my work</span>
+        <mat-icon class="homepage--button-mat-icon">arrow_forward</mat-icon>
       </div>
-    </div>
+    </button>
   </div>
 </div>

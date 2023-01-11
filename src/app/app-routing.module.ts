@@ -7,13 +7,8 @@ import { RouteErrorComponent } from './pages/route-error/route-error.component';
 
 const routes: Routes = [
   {
-    path: 'works',
-    title: 'works',
-    component: PersonalProjectsComponent,
-  },
-  {
     path: '',
-    title: 'by Juimor',
+    title: 'Rafik Djouadi - Works',
     component: HomepageComponent,
   },
   { path: '**', component: RouteErrorComponent },
